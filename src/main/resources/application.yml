@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: retrofit
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/${POSTGRES_DB}
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PWD}
+  jooq:
+    sql-dialect: POSTGRES
+
+server:
+  port: 8083
+
+token:
+  api: ${TOKEN_API}
